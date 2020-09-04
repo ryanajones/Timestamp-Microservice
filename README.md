@@ -12,4 +12,4 @@ https://repl.it/@ryanajones/Timestamp-Microservice#README.md
 
 ## Screenshot
 
-![Screenshot](/docs/screenshot1.png)
+![alt text](https://i.imgur.com/f4kpcWg.png)
