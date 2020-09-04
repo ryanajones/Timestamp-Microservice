@@ -3,10 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="style.css" />
     <title>Timestamp Microservice</title>
   </head>
   <body>
-    <h1>Timestamp Microservice</h1>
+    <main>
+      <div id="title">
+        <h1>Timestamp Microservice</h1>
+        <div id="description">'APIs and Microservices Project'</div>
+      </div>
+      <div id="instructions-wrapper">
+        <ul>
+          <li>
+            In the URL, enter a date in the place of :date_string -
+            [project_url]/api/timestamp/:date_string
+          </li>
+          <li>
+            Date strings must be compliant with ISO-8601 (e.g. "2016-11-20")
+          </li>
+          <li>An empty date string will give the current date and time</li>
+        </ul>
+        <div id="example-wrapper">
+          <div class="example-titles">
+            <h3>Example Usage</h3>
+          </div>
+          <ul id="usage-example">
+            <li>[project url]/api/timestamp/2015-12-25</li>
+            <li>[project url]/api/timestamp/1451001600000</li>
+          </ul>
+          <div id="output-title" class="example-titles">
+            <h3>Example Output</h3>
+          </div>
+          <ul id="output-example">
+            <li>
+              {"unix":1451001600000, "utc":"Fri, 25 Dec 2015 00:00:00 GMT"}
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
   </body>
 </html>

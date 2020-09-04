@@ -16,12 +16,11 @@ app.get("/", (req, res) => {
 })
 
 app.get("/api/timestamp/:time?", (req, res) => {
-  const date = req.params.time;
+  const date = isNaN(req.params.time)? req.params.time: parseInt(req.params.time)
   const unix = date ? new Date(date).getTime(): new Date().getTime();
   const utc = date ? new Date(date).toUTCString(): new Date().toUTCString();
-  const invalid = unix? true: false;
-
-  if (invalid) {
+  const validOrNot = unix? true: false; 
+  if (validOrNot) {
     res.json({
       "unix": unix,
       "utc": utc
